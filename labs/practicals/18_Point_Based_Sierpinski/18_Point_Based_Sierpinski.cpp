@@ -30,11 +30,14 @@ void create_sierpinski(geometry &geom) {
     // Add random point
 
     // Add colour - all points red
+		//colours = vec4(1.0f, 0.0f, 0.0f, 0.0f);
 
     // *********************************
   }
   // *********************************
   // Add buffers to geometry
+  geom.add_buffer(points, BUFFER_INDEXES::POSITION_BUFFER);
+  geom.add_buffer(colours, BUFFER_INDEXES::COLOUR_BUFFER);
 
 
   // *********************************

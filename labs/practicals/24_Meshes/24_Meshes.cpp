@@ -25,6 +25,7 @@ bool load_content() {
   // Create mesh object here
 
   // *********************************
+  m = mesh(geom);
 
   // Load in shaders
   eff.add_shader("shaders/basic.vert", GL_VERTEX_SHADER);
@@ -58,6 +59,7 @@ bool render() {
   glUniformMatrix4fv(eff.get_uniform_location("MVP"), 1, GL_FALSE, value_ptr(MVP));
   // *********************************
   // Render the mesh here
+  renderer::render(m);
 
   // *********************************
   return true;

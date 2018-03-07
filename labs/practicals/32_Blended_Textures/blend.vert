@@ -1,3 +1,4 @@
+
 #version 440
 
 uniform mat4 MVP;
@@ -5,8 +6,9 @@ uniform mat4 MVP;
 // *********************************
 // Declare incoming values
 // 0 - position
-
+layout (location = 0) in vec3 position;
 // 10 - tex_coord_in
+layout (location = 10) in vec2 tex_coord_in;
 
 // *********************************
 

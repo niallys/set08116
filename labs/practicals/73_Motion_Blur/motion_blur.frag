@@ -17,11 +17,11 @@ layout(location = 0) out vec4 colour;
 void main() {
   // *********************************
   // Sample the two textures
-
-
+  vec4 tex_colour = texture(tex, tex_coord);
+  vec4 frame_colour = texture(previous_frame, tex_coord);
   // Mix between these two colours
-
+  colour = mix(frame_colour, tex_colour);
   // Ensure alpha is 1.0
-
+  colour.a = 1.0;
   // *********************************
 }

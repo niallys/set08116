@@ -1,6 +1,6 @@
 #version 440
 
-// This shader requires direction.frag, point.frag and spot.frag
+// This shader requires part_direction.frag, part_point.frag,part_spot.frag
 
 // Directional light structure
 #ifndef DIRECTIONAL_LIGHT
@@ -81,7 +81,7 @@ layout(location = 2) in vec2 tex_coord;
 layout(location = 0) out vec4 colour;
 
 void main() {
-  // *********************************
+   // *********************************
   // Calculate view direction
 
   // Sample texture
